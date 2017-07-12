@@ -122,10 +122,10 @@ public class Board {
     }
 
     public void dumpGrid(){
-        String[][] transposed = grid; /*new String[grid[0].length][grid.length];
+        String[][] transposed = new String[grid[0].length][grid.length];
         for (int i = 0; i < grid.length; i++)
             for (int j = 0; j < grid[0].length; j++)
-                transposed[j][i] = grid[i][j];*/
+                transposed[j][i] = grid[i][j];
 
         for(int i = 0; i < transposed.length; i++){
             String[] row = transposed[i];
